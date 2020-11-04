@@ -1,0 +1,142 @@
+body {
+	margin: 0px;
+}
+
+.container1 {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+/*navstyles*/
+.nav-wrapper1 {
+	display: flex;
+	justify-content: space-between;
+	padding: 38px;
+}
+.leftside {
+	display: flex;
+}
+.nav-wrapper1 > .leftside > div {
+	margin-right: 20px;
+	font-size: 0.9em;
+	text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+	height: 22px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+	color: thistle;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+	border-bottom: 1px solid black;
+}
+.nav-link-wrapper a :hover {
+	color: black;
+}
+
+/*portfolio styles*/
+
+.portfolio-items-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.portfolio-item-wrapper {
+	position: relative;
+}
+.portfolio-imag-background {
+	height: 350px;
+	width: 100px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.subtitle {
+	font-weight: 600;
+	color: cadetblue;
+}
+.img-darken {
+	transition: 1s;
+	filter: brightness(10%);
+}
+
+.two-column-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.profile-image-wrapper img {
+	width: 100%;
+}
+.profile-content-wrapper {
+	padding: 30px;
+}
+.profile-content-wrapper h4 {
+	color: cornflowerblue;
+}
+
+/*contact styles*/
+.contact {
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: cornflowerblue;
+	background-size: cover;
+}
+.contact.content {
+	max-width: 800px;
+	text-align: center;
+}
+.contact.content h2 {
+	font-size: 36px;
+
+	font-weight: 500;
+	color: #ffffff;
+}
+.contact.content p {
+	font-weight: 300;
+	color: #ffffff;
+}
+container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+.container.contactInfo {
+	width: 50px;
+	display: flex;
+	flex-direction: column;
+}
+.container.contactInfo.box {
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+.container.contactInfo.box.icon {
+	min-width: 60px;
+	height: 60px;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50px;
+	font-size: 22px;
+}
+.container.contactInfo.box.text {
+	display: flex;
+	margin-left: 20px;
+	font-size: 16px;
+	color: white;
+}

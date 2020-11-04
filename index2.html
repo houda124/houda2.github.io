@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houda+Ilhem</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="container1">
+        <div class="nav-wrapper1">
+            <div class="leftside">
+                <div class="nav-link-wrapper">
+                    <a href="index2.html">home</a>
+                  </div>   
+               <div class="nav-link-wrapper"> 
+                    <a href="about2.html">about</a>
+                 </div>
+                <div class="nav-link-wrapper">
+                    <a href="Contact.us.html">contact us </a>
+                </div>
+              
+
+                 
+            </div>
+            <div class="rightside">
+                <div class="brand">
+
+
+                   <div>HOUDA+ILHEM</div>
+                </div>
+             </div> 
+        </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style=background-image:url(photo1.jpg)></div>
+                    <div class="img-text-wrapper">
+                        <img src="images/photo1.jpg" >
+
+                    </div>
+                    <div class="subtitle">
+                        salade
+                    </div>
+                    
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style=background-image:url(phot2.jpg)></div>
+                    <div class="img-text-wrapper">
+                        <img src="images/phot2.jpg" >
+
+                    </div>
+                    <div class="subtitle">
+                       sandwitch 
+                    </div>
+                    
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style=background-image:url(photo3.jpg)></div>
+                    <div class="img-text-wrapper">
+                        <img src="images/photo3.jpg" >
+
+                    </div>
+                    <div class="subtitle">
+                        burger
+                    </div>
+                    
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style=background-image:url(photo4.jpg)></div>
+                    <div class="img-text-wrapper">
+                        <img src="images/photo4.jpg" >
+
+                    </div>
+                    <div class="subtitle">
+                        beard
+                    </div>
+                    
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style=background-image:url(photo5.jpg)></div>
+                    <div class="img-text-wrapper">
+                        <img src="images/photo5.jpg" >
+
+                    </div>
+                    <div class="subtitle">
+                        rice
+                    </div>
+                    
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style=background-image:url(photo6.jpg)></div>
+                    <div class="img-text-wrapper">
+                        <img src="images/photo6.jpg" >
+
+                    </div>
+                    <div class="subtitle">
+                        pasta
+                    </div>
+                    
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style=background-image:url(photo7.jpg)></div>
+                    <div class="img-text-wrapper">
+                        <img src="images/photo7.jpg" >
+
+                    </div>
+                    <div class="subtitle">
+                        Pizza
+                    </div>
+                    
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style=background-image:url(photo8.jpg)></div>
+                    <div class="img-text-wrapper">
+                        <img src="images/photo8.jpg" >
+
+                    </div>
+                    <div class="subtitle">
+                        icecream
+                    </div>
+                    
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style=background-image:url(photo9.jpg)></div>
+                    <div class="img-text-wrapper">
+                        <img src="images/photo9.jpg" >
+
+                    </div>
+                    <div class="subtitle">
+                        Coffee
+                    </div>
+                    
+                </div>
+                
+
+            </div>
+        </div>
+   </div>  
+</body>
+<script>
+    const portfolioitems = document.querySelectorAll ('portfolio-item-wrapper')
+    portfolioitems.forEach(portfolioitem=> {
+        portfolioitem.addEventListener('mouseover', () =>{ portfolioitem.childNodes[1].classlist.add('img-darken');
+
+        })
+        portfolioitem.addEventListener('mouseover', () =>{
+            console.log(portfolioitem.childNodes[1].classlist);
+            portfolioitem.childNodes[1].classlist.remove('img-darken');
+        })
+    })
+</script>
+</html>
